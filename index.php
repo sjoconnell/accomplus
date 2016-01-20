@@ -2,10 +2,8 @@
 <?php include 'myplugin.php';?>
 
 <?php 
-    // var_dump($array_csv[0]);
-    // var_dump($array_csv[1]);
-    var_dump($new_array);
- ?>
+
+?>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
