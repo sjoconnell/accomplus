@@ -2,19 +2,26 @@
 
 <?php 
 
-    $api_data = file_get_contents('http://il.leagueinfosight.com/client/infosight/il/list.php', NULL, NULL, 0);
+    // CAPTURES DATA FROM API
+    function get_api_data(){
+        $api_data = file_get_contents('http://il.leagueinfosight.com/client/infosight/il/list.php', NULL, NULL, 0);
+    }
 
+    // TURNS STRING INTO ARRAY
     $array = explode(PHP_EOL, $api_data);
 
-    
+    // FORMATS ARRAY CORRECTLY
     foreach ($array as $string) {
         $array_csv[] = str_getcsv($string);
     }
 
-
+    // GRABS FIRST ROW OF THE ARRAY FOR KEYS
     $keys = $array_csv[0];
+
+    // REMOVES FIRST ROW OF THE ARRAY
     array_shift($array_csv);
 
+    //  CREATES ASSOCIATIVE ARRAY OF API KEYS AND DATA
     foreach ($array_csv as $row) {
         $new_array[] = array_combine($keys, $row);
     }
@@ -33,6 +40,10 @@
     // MAKES IT AN ARRAY
     // $hope = json_decode($content, true);
 
+
+
+
+    // CREATS SEPERATE PAGES FROM THE API
     // foreach ($new_array as $item) {
 
     //     $link = $item['APILink'];
@@ -51,7 +62,21 @@
     //     $result = wp_insert_post($my_post);
 
     //     update_field("api_id", $item["ID"], $result);
+
     // }
+
+
+
+
+    // CREATES ARRAY OF POST IDS AND CORRESPONDING API_ID VALUE
+    $pages = get_pages($args);
+
+    foreach ($pages as $page) {
+            $array_id[] = ($page->{'ID'});
+            $array_api[] = ($page->{'api_id'});
+    }
+
+    $array_of_ids = array_combine($array_id, $array_api);
 
 
 ?>

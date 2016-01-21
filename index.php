@@ -1,7 +1,15 @@
 <?php get_template_part('templates/page', 'header'); ?>
-<!-- <?php include 'myplugin.php';?> -->
+<?php include 'myplugin.php';?>
 
-<?php wp_list_pages( $args ); ?>
+<?php 
+
+    wp_list_pages( $args );
+
+    print_r($array_of_ids);
+    
+ ?>
+
+
 
 
 <!-- <?php if (!have_posts()) : ?> -->
