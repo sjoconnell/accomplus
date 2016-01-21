@@ -33,21 +33,25 @@
     // MAKES IT AN ARRAY
     // $hope = json_decode($content, true);
 
-    foreach ($new_array as $item) {
-        $link = $item['APILink'];
-        $link_fixed = substr_replace($link, "", 4, 1);
-        $link_string = file_get_contents($link_fixed);
-        $json = json_decode($link_string);
-        $content = $json->{'Content'};
+    // foreach ($new_array as $item) {
 
-        $my_post = array(
-            'post_title' => $item['PageName'],
-            'post_content' => $content,
-            'post_type' => 'page'
-            );
+    //     $link = $item['APILink'];
+    //     $link_fixed = substr_replace($link, "", 4, 1);
+    //     $link_string = file_get_contents($link_fixed);
+    //     $json = json_decode($link_string);
+    //     $content = $json->{'Content'};
 
-        wp_insert_post($my_post);
-    }
+    //     $my_post = array(
+    //         'post_title' => $item['PageName'],
+    //         'post_content' => $content,
+    //         'post_type' => 'page',
+    //         'post_status' => 'publish'
+    //         );
+
+    //     $result = wp_insert_post($my_post);
+
+    //     update_field("api_id", $item["ID"], $result);
+    // }
 
 
 ?>
