@@ -1,9 +1,6 @@
 <?php get_template_part('templates/page', 'header'); ?>
 <?php include 'myplugin.php';?>
 
-<?php 
-
-?>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
