@@ -1,0 +1,218 @@
+.slider {
+    height: 345px;
+    width: 100%;
+    background-color: orange;
+}
+
+.slider h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 150px;
+}
+
+.home-top {
+    width: 100%;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.home-top-grey {
+    width: 100%;
+    height: 25px;
+    background-color: #F5F5F1;
+    position: absolute;
+    top: 0;
+}
+
+.home-top-text {
+    width: 66%;
+    padding: 75px 0px;
+}
+
+.home-top-text h1 {
+    font-size: 40px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    color: #4d4f4f;
+    padding-bottom: 25px;
+}
+
+.home-top-text p {
+    font-size: 20px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: #797c7d;
+    line-height: 30px;
+}
+
+.home-bottom {
+    width: 100%;
+    background-color: #F5F5F1;
+}
+
+.home-bottom-container {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.home-bottom-box {
+    position: relative;
+    display: inline-block;
+    height: 240px;
+    width: 280px;
+    border: 1px solid #BABDBE;
+    margin: 0 5px;
+    border-radius: 2px;
+    vertical-align: top;
+}
+
+.home-bottom-icon {
+    position: absolute;
+    background-color: #F5F5F1;
+    width: 60px;
+    top: -22px;
+    text-align: center;
+    margin: 0 109px;
+}
+
+.home-bottom-box-title {
+    position: absolute;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.home-bottom-box-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 85px;
+}
+
+.home-bottom-box-link {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 40px;
+}
+
+.home-bottom-box-title h2 {
+    width: 60%;
+    font-size: 24px;
+    color: #4d4f4f;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.home-bottom-box-text p {
+    width: 80%;
+    font-size: 15px;
+    color: #797c7d;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 25px;
+}
+
+.home-bottom-box-link h5 {
+    width: 100%;
+    font-family: Vollkorn,serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.home-bottom-box-title h2, .home-bottom-box-text p, .home-bottom-box-link h5 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home-bottom-box-link h5 a {
+    color: #4d4f4f;
+    text-decoration: none;
+    border-bottom: 1px solid #AED139;
+    padding-bottom: 4px;
+}
+
+.home-bottom-box-link h5 a:hover, .home-bottom-split-boxes-link h5 a:hover {
+    border-bottom: none;
+}
+
+.home-bottom-white {
+    height: 15px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.home-bottom-split-boxes {
+    display: inline-block;
+    margin: 0 5px;
+    height: 240px;
+    width: 280px;
+}
+
+.home-bottom-split-boxes-top {
+    width: 280px;
+    height: 65px;
+    border: 1px solid #BABDBE;
+    margin-bottom: 38px;
+    border-radius: 2px;
+    position: relative;
+    vertical-align: top;
+}
+
+.home-bottom-split-boxes-bottom {
+    width: 280px;
+    height: 135px;
+    border: 1px solid #BABDBE;
+    border-radius: 2px;
+    position: relative;
+    vertical-align: top;
+}
+
+.home-bottom-split-boxes-top .home-bottom-split-boxes-title {
+    position: absolute;
+    top: -13px;
+    width: 170px;
+    background-color: #F5F5F1;
+    left: 55px;
+}
+
+.home-bottom-split-boxes-top .home-bottom-split-boxes-link, .home-bottom-split-boxes-bottom .home-bottom-split-boxes-link {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 15px;
+}
+
+.home-bottom-split-boxes-bottom .home-bottom-split-boxes-title {
+    position: absolute;
+    top: -13px;
+    width: 150px;
+    background-color: #F5F5F1;
+    left: 66px;
+}
+
+.home-bottom-split-boxes-title h2 {
+    font-size: 24px;
+    color: #4d4f4f;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.home-bottom-split-boxes-link h5 {
+    width: 100%;
+    font-family: Vollkorn,serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.home-bottom-split-boxes-link h5 a {
+    color: #4d4f4f;
+    text-decoration: none;
+    border-bottom: 1px solid #AED139;
+    padding-bottom: 4px;
+}
+
+.home-bottom-split-boxes-title h2, .home-bottom-split-boxes-link h5 {
+    text-align: center;
+    margin: 0 auto;
+}

@@ -35,7 +35,7 @@
 
     // UPDATES or CREATES PAGES PULLED IN FROM THE API
     // ADD MODIFIED DATE AND CHECK AGAINST THAT FOR UPDATES SO I ONLY UPDATE THOSE AND NOT EVERY SINGLE PAGE
-    // ALSO ADD CATEGORE OF API PAGE TO SEPERATE THESE FROM THE MAIN PAGE
+    // ALSO ADD CATEGORY OF API PAGE TO SEPERATE THESE FROM THE MAIN PAGE
 
     // foreach ($api_data as $item) {
 
@@ -70,6 +70,7 @@
     //         $result = wp_insert_post($my_post);
 
     //         update_field("api_id", $item["ID"], $result);
+    //         update_field("mod_date", $item["LastModified"], $result);
     //     }
     // }
 ?>
