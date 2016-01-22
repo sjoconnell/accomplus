@@ -1,0 +1,44 @@
+footer {
+    width: 100%;
+    background-color: #4D4F4F;
+    height: 230px;
+}
+
+.footer-image {
+    background-image: url("../images/A-accomplus.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 230px;
+    position: absolute;
+    display: block;
+    right: 0;
+}
+
+.footer-address {
+    font-family: Arial,Helvetica,sans-serif;
+    padding-top: 35px;
+}
+
+.footer-address-title {
+    font-size: 16px;
+}
+
+.footer-address ul li {
+    font-size: 15px;
+    color: #9EA2A4;
+    font-weight: 100;
+    line-height: 30px;
+    letter-spacing: .3px;
+}
+
+.footer-address ul li h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-address-info a {
+    text-decoration: none;
+    color: #9EA2A4;
+}

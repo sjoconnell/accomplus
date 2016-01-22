@@ -1,11 +1,5 @@
-<?php get_template_part('templates/page', 'header'); ?>
-<?php include 'myplugin.php';?>
-
-<?php 
-
-    wp_list_pages( $args );
-
-?>
+<!-- 
+<?php get_template_part('templates/page', 'header'); ?> -->
 
 
 
@@ -16,9 +10,10 @@
   <!-- </div> -->
   <!-- <?php get_search_form(); ?> -->
 <!-- <?php endif; ?> -->
-
+<!-- 
 <?php while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/content', get_post_type() != 'post' ? get_post_type() : get_post_format()); ?>
-<?php endwhile; ?>
-
+<?php endwhile; ?> -->
+<!-- 
 <?php the_posts_navigation(); ?>
+ -->

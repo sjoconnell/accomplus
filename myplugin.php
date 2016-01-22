@@ -34,6 +34,9 @@
     $array_of_ids = array_combine($api_ids, $wp_ids);
 
     // UPDATES or CREATES PAGES PULLED IN FROM THE API
+    // ADD MODIFIED DATE AND CHECK AGAINST THAT FOR UPDATES SO I ONLY UPDATE THOSE AND NOT EVERY SINGLE PAGE
+    // ALSO ADD CATEGORE OF API PAGE TO SEPERATE THESE FROM THE MAIN PAGE
+
     // foreach ($api_data as $item) {
 
     //     $link = $item['APILink'];

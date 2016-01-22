@@ -1,0 +1,107 @@
+.top-header {
+    background-color: #F5F5F1;
+}
+
+.top-header-nav {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #4d4f4f;
+    float: right;
+    padding-top: 2px;
+    padding-bottom: 9px;
+}
+
+.top-header-nav li {
+    display: inline-block;
+}
+
+.top-header-list-item {
+    margin-right: 25px;
+    padding-top: 12px;
+}
+
+.top-header-list-item a {
+    text-decoration: none;
+    color: #4d4f4f;
+}
+
+.top-header-list-item a:hover {
+    color: #0F9448;
+}
+
+.phone {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.middle-header {
+    background-color: #FFFFFF;
+    height: 109px;
+    width: 100%;
+}
+
+.middle-header a {
+    background-image: url("../images/accomplus-logo.png");
+    width: 656px;
+    height: 127px;
+    display: block;
+    position: absolute;
+    top: 17px;
+}
+
+.bottom-header {
+    background-color: #0E9548;
+}
+
+.bottom-header nav {
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Myriad Pro',sans-serif;
+}
+
+.bottom-header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.bottom-header li {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 18px;
+    letter-spacing: .5px;
+}
+
+.bottom-header li:hover {
+    background-color: #097331;
+}
+
+.header-search {
+    display: block;
+    float: right;
+    padding-top: 10px;
+}
+
+.header-search-input {
+    background-color: #0E9548;
+    border: none;
+    border-bottom: 1px solid #fff;
+    height: 30px;
+}
+
+.header-search-input::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.fa-search {
+    color: #fff;
+}
