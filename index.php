@@ -5,9 +5,7 @@
 
     wp_list_pages( $args );
 
-    print_r($array_of_ids);
-    
- ?>
+?>
 
 
 

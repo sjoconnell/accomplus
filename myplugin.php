@@ -2,13 +2,11 @@
 
 <?php 
 
-    // CAPTURES DATA FROM API
-    function get_api_data(){
-        $api_data = file_get_contents('http://il.leagueinfosight.com/client/infosight/il/list.php', NULL, NULL, 0);
-    }
+    // RETRIEVES DATA FROM API
+    $api = file_get_contents('http://il.leagueinfosight.com/client/infosight/il/list.php', NULL, NULL, 0);
 
-    // TURNS STRING INTO ARRAY
-    $array = explode(PHP_EOL, $api_data);
+    // TURNS API DATA INTO ARRAY
+    $array = explode(PHP_EOL, $api);
 
     // FORMATS ARRAY CORRECTLY
     foreach ($array as $string) {
@@ -18,33 +16,25 @@
     // GRABS FIRST ROW OF THE ARRAY FOR KEYS
     $keys = $array_csv[0];
 
-    // REMOVES FIRST ROW OF THE ARRAY
+    // REMOVES FIRST ROW OF THE ARRAY(KEYS)
     array_shift($array_csv);
 
-    //  CREATES ASSOCIATIVE ARRAY OF API KEYS AND DATA
+    //  CREATES ASSOCIATIVE ARRAY OF API KEYS AND VALUES
     foreach ($array_csv as $row) {
-        $new_array[] = array_combine($keys, $row);
+        $api_data[] = array_combine($keys, $row);
     }
 
-    //TEST TO MAKE SURE ALL STUFF WORKS//
-    // $first = $new_array[0];
-    // $link = $first['APILink'];
-    // $linker = substr_replace($link, "", 4, 1);
-    // $content = file_get_contents($linker);
+    // CREATES ASSOCIATIVE ARRAY OF API_ID'S AND CORRESPONDING POST ID VALUES
+    $pages = get_pages($args);
+    foreach ($pages as $page) {
+            $wp_ids[] = ($page->{'ID'});
+            $api_ids[] = ($page->{'api_id'});
+    }
 
-    // RETURNS JSON OBJECT
-    // $json = json_decode($content);
-    // BELOW RETURNS A STRING!!!
-    // $json->{'Content'};
+    $array_of_ids = array_combine($api_ids, $wp_ids);
 
-    // MAKES IT AN ARRAY
-    // $hope = json_decode($content, true);
-
-
-
-
-    // CREATS SEPERATE PAGES FROM THE API
-    // foreach ($new_array as $item) {
+    // UPDATES or CREATES PAGES PULLED IN FROM THE API
+    // foreach ($api_data as $item) {
 
     //     $link = $item['APILink'];
     //     $link_fixed = substr_replace($link, "", 4, 1);
@@ -52,31 +42,31 @@
     //     $json = json_decode($link_string);
     //     $content = $json->{'Content'};
 
-    //     $my_post = array(
-    //         'post_title' => $item['PageName'],
-    //         'post_content' => $content,
-    //         'post_type' => 'page',
-    //         'post_status' => 'publish'
-    //         );
+    //     if (in_array($item["ID"], $api_ids) === true) {
 
-    //     $result = wp_insert_post($my_post);
+    //         // UPDATES PAGE CONTENT
+    //         $wp_id = $array_of_ids[$item["ID"]];
 
-    //     update_field("api_id", $item["ID"], $result);
+    //         $update_post = array(
+    //             'ID' => $wp_id,
+    //             'post_content' => $content
+    //             );
+            
+    //         wp_update_post($update_post);
 
+    //     } else {
+
+    //         // CREATES PAGE
+    //         $my_post = array(
+    //             'post_title' => $item['PageName'],
+    //             'post_content' => $content,
+    //             'post_type' => 'page',
+    //             'post_status' => 'publish'
+    //             );
+
+    //         $result = wp_insert_post($my_post);
+
+    //         update_field("api_id", $item["ID"], $result);
+    //     }
     // }
-
-
-
-
-    // CREATES ARRAY OF POST IDS AND CORRESPONDING API_ID VALUE
-    $pages = get_pages($args);
-
-    foreach ($pages as $page) {
-            $array_id[] = ($page->{'ID'});
-            $array_api[] = ($page->{'api_id'});
-    }
-
-    $array_of_ids = array_combine($array_id, $array_api);
-
-
 ?>
