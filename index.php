@@ -1,7 +1,10 @@
 <!-- 
 <?php get_template_part('templates/page', 'header'); ?> -->
 
+<?php 
 
+                
+?>
 
 
 <!-- <?php if (!have_posts()) : ?> -->
