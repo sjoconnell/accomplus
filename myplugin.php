@@ -19,12 +19,8 @@
         $api_data[] = array_combine($keys, $row);
     }
 
-    // CREATES ASSOCIATIVE ARRAY OF API_ID'S AND CORRESPONDING POST ID VALUES
-    $api_args = array (
-        'meta_key' => 'api_id'
-        );
-
-    $pages = get_pages($api_args);
+    // CREATES ARRAY OF ALL THE API_ID VALUES
+    $pages = get_pages($args);
     foreach ($pages as $page) {
             $api_ids[] = ($page->{'api_id'});
     }
@@ -41,21 +37,24 @@
         $json = json_decode($link_string);
         $content = $json->{'Content'};
 
-        if ((in_array($item["ID"], $api_ids) === true) && ($item["LastModified"] !== $array_of_dates[$item["ID"]])) {
+        if (in_array($item["ID"], $api_ids) === true) {
 
             // UPDATES PAGE CONTENT
-            $wp_id = $array_of_ids[$item["ID"]];
+            if ($item["LastModified"] !== $array_of_dates[$item["ID"]]) {
+                
+                $wp_id = $array_of_ids[$item["ID"]];
 
-            $update_post = array(
-                'ID' => $wp_id,
-                'post_content' => $content
-                );
-            
-            wp_update_post($update_post);
+                $update_post = array(
+                    'ID' => $wp_id,
+                    'post_content' => $content
+                    );
+                
+                wp_update_post($update_post);
 
-            update_field("mod_date", $item["LastModified"], $wp_id);
+                update_field("mod_date", $item["LastModified"], $wp_id);
 
-            $array_of_dates[$item["ID"]] = $item["LastModified"];
+                $array_of_dates[$item["ID"]] = $item["LastModified"];
+            }
 
         } else {
 
