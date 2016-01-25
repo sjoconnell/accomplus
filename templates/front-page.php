@@ -1,8 +1,18 @@
 <?php /* Template Name: Homepage */ ?>
 <?php while (have_posts()) : the_post(); ?>
     
-        <div class="slider">
-            <h1>Slider Goes Here</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-one"></div>
+                <div class="swiper-slide slide-two"></div>
+                <div class="swiper-slide slide-three"></div>
+                <div class="swiper-slide slide-four"></div>
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
         </div>
 
         <div class="home-top">

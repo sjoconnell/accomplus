@@ -1,13 +1,35 @@
-.slider {
-    height: 345px;
+
+.swiper-container {
     width: 100%;
-    background-color: orange;
+    height: 350px;
 }
 
-.slider h1 {
-    text-align: center;
-    font-size: 50px;
-    padding-top: 150px;
+.slide-one {
+    background-image: url("../images/main-banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-two {
+    background-image: url("../images/second-banner-correct.png.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-three {
+    background-image: url("../images/third-banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-four {
+    background-image: url("../images/fourth-banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .home-top {
