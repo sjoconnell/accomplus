@@ -1,7 +1,7 @@
 <?php /* Template Name: Homepage */ ?>
 <?php while (have_posts()) : the_post(); ?>
     
-        <div class="swiper-container">
+        <div class="main-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide-one"></div>
                 <div class="swiper-slide slide-two"></div>
@@ -21,6 +21,19 @@
                 <div class="home-top-text">
                     <h1>Our mission</h1>
                     <p>At Accomplus, our priority is to be a one-stop compliance shop for credit unions. Our industry is always changing, and it can be hard to keep up. Thats where we come in. If you need compliance help, youll get a collaborative and simplified experience here. With sophisticated support and best-in-class services, we strive to help your CU operate more efficiently than ever before.</p>
+                </div>
+                <div class="home-top-slider">
+                    <div class="home-top-slider-box">
+                        <div class="home-top-slider-title">
+                            <h1>Training</h1>
+                        </div>
+                        <div class="home-top-slider-text">
+                            <p>BSA, financial skills, board workshops and more.</p>
+                        </div>
+                        <div class="home-top-slider-link">
+                            <h5><a href="#">get trained</a></h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

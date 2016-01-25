@@ -1,5 +1,5 @@
 
-.swiper-container {
+.main-slider {
     width: 100%;
     height: 350px;
 }
@@ -49,6 +49,7 @@
 .home-top-text {
     width: 66%;
     padding: 75px 0px;
+    display: inline-block;
 }
 
 .home-top-text h1 {
@@ -65,6 +66,78 @@
     font-weight: 400;
     color: #797c7d;
     line-height: 30px;
+}
+
+.home-top-slider {
+    width: 24%;
+    height: 185px;
+    float: right;
+    margin-top: 135px;
+}
+
+.home-top-slider-box {
+    position: relative;
+    width: 100%;
+}
+
+.home-top-slider-title, .home-top-slider-text, .home-top-slider-link {
+    width: 100%;
+    position: absolute;
+}
+
+.home-top-slider-title {
+    border-bottom: 2px solid #E3E5E5;
+}
+
+.home-top-slider-text {
+    padding-top: 40px;
+}
+
+.home-top-slider-link {
+    padding-top: 115px;
+}
+
+.home-top-slider-title h1 {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    font-family: Vollkorn,serif;
+    font-weight: 400;
+    color: #4d4f4f;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+}
+
+.home-top-slider-text p {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    font-size: 15px;
+    color: #797c7d;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 25px;
+}
+
+.home-top-slider-link h5 {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-family: Vollkorn,serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.home-top-slider-link h5 a {
+    color: #4d4f4f;
+    text-decoration: none;
+    border-bottom: 1px solid #AED139;
+    padding-bottom: 4px;
+}
+
+.small-slider {
+    width: 100%;
+    height: 100px;
 }
 
 .home-bottom {
