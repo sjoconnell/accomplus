@@ -1,0 +1,87 @@
+.banner-text-about {
+    padding-top: 10px;
+}
+
+.banner-text-about p {
+
+    line-height: 28px;
+}
+
+.page-content p {
+    font-size: 18px;
+    line-height: 1.56;
+    font-family: 'Open Sans',sans-serif;
+    color: #797c7d;
+}
+
+.about-text {
+    padding-top: 25px;
+    width: 70%;
+    padding-bottom: 70px;
+}
+
+.about-profiles {
+    width: 100%;
+}
+
+.about-profiles li {
+    border-bottom: 10px solid #AED139;
+    margin-bottom: 30px;
+}
+
+.about-profiles-image {
+    background-image: url("../images/Steve-Olson.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 220px;
+    height: 265px;
+    display: inline-block;
+    margin-bottom: -3px;
+}
+
+.about-profiles-text {
+    display: inline-block;
+    width: 71%;
+    padding-left: 30px;
+    vertical-align: top;
+    padding-top: 15px;
+}
+
+.about-profiles-text h1 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    color: #4d4f4f;
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+
+.about-profiles-text h2 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    color: #4d4f4f;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.about-profiles-text p {
+    padding-bottom: 20px;
+}
+
+.about-profiles-text a {
+    font-family: Vollkorn,serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4d4f4f;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #AED139;
+}
+
+.about-profile-text-bottom {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.about-profiles-text a:hover {
+    border-bottom: none;
+}

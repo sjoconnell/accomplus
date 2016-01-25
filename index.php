@@ -1,7 +1,7 @@
 <!-- 
 <?php get_template_part('templates/page', 'header'); ?> -->
 
-<?php include("myplugin.php"); ?>
+<?php include("_yplugin.php"); ?>
 
 
 

@@ -1,0 +1,156 @@
+.compliance-text {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 66%;
+}
+
+.compliance-text h3 {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 20px;
+    color: #4d4f4f;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.compliance-text p {
+    padding-bottom: 20px;
+}
+
+.compliance-categories {
+    padding-bottom: 45px;
+}
+
+.compliance-box {
+    position: relative;
+    height: 215px;
+    width: 230px;
+    border-bottom: 10px solid #0F9448;
+    border-top: 10px solid #AED139;
+    border-left: 1px solid #e8e8e3;
+    border-right: 1px solid #e8e8e3;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    vertical-align: top;
+}
+
+.compliance-box-title {
+    position: absolute;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.compliance-box-content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 75px;
+}
+
+.compliance-box-link {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 25px;
+}
+
+.compliance-box h4 {
+    width: 70%;
+    font-size: 24px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    color: #4d4f4f;
+    text-transform: uppercase;
+}
+
+#compliance-box-text {
+    width: 90%;
+    color: #797c7d;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.compliance-box h5 {
+    width: 60%;
+    font-size: 14px;
+    color: #4d4f4f;
+    font-family: Vollkorn,serif;
+    text-transform: uppercase;
+}
+
+.compliance-box h5 a {
+    color: #4d4f4f;
+    text-decoration: none;
+}
+
+.compliance-box h5 a:hover {
+    border-bottom: 1px solid #4d4f4f;
+    padding-bottom: none;
+}
+
+
+.compliance-box h4, .compliance-box p, .compliance-box h5 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*BANNER*/
+
+.banner {
+    width: 100%;
+    background-color: #097331;
+    height: 240px;
+    position: relative;
+}
+
+.black-rhombus {
+    position: absolute;
+    width: 100px;
+    height: 225px;
+    -webkit-transform: skew(-35deg);
+    background-color: #0F9448;
+    right: 79px;
+    z-index: 12;
+    top: 15px;
+}
+
+.orange-rectangle {
+    position: absolute;
+    width: 200px;
+    height: 15px;
+    background-color: #0F9448;
+    right: 0px;
+    z-index: 13;
+}
+
+.banner-rhombus {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    -webkit-transform: skew(-35deg);
+    background-color: #0F9448;
+    right: 84px;
+}
+
+.banner-text {
+    padding-top: 50px;
+}
+
+.banner h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Open Sans',sans-serif;
+    padding-bottom: 25px;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #f5f5f1;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: .3px;
+}

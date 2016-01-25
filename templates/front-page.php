@@ -1,6 +1,7 @@
 <?php /* Template Name: Homepage */ ?>
 <?php while (have_posts()) : the_post(); ?>
-    <div class="slider">
+    
+        <div class="slider">
             <h1>Slider Goes Here</h1>
         </div>
 
