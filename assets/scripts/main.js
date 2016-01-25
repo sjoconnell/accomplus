@@ -22,6 +22,12 @@
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+
+          $(".about-profile-text-bottom").click(function(){
+          $(".about-profile-text-hidden").toggle();
+          $(".about-profile-text-bottom").addClass("hidden-bottom");
+        });
+
       }
     },
     // Home page
