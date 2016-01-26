@@ -10,8 +10,11 @@
             </div>
             
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+<!--             <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <i class="fa fa-chevron-left fa-2x prev-button"></i>
+            <i class="fa fa-chevron-right fa-2x next-button"></i>
 
         </div>
 

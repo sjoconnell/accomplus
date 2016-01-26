@@ -34,8 +34,8 @@
             var mySwiper = new Swiper ('.main-slider', {
               // Optional parameters
               loop: true,
-              nextButton: '.swiper-button-next',
-              prevButton: '.swiper-button-prev',
+              nextButton: '.next-button',
+              prevButton: '.prev-button',
               autoplay: 4000,
               autoplayDisableOnInteraction: false,
               effect: 'fade',
