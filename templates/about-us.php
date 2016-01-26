@@ -30,8 +30,11 @@
                                 <div class="about-profile-text-hidden">
                                     <p><?php the_sub_field('description_hidden');?></p>
                                 </div>
-                                <div class="about-profile-text-bottom"><p>read more</p></div>
-                                <div class="about-profile-text-bottom"><p>contact</p></div>
+                                <div class="about-profile-text-bottom about-read"><p>read more</p></div>
+                                <div class="about-profile-text-bottom about-contact"><p>contact</p></div>
+                                <div class="email-hidden">
+                                    <a href="#" class="profile-email">SOlson@accomplus.net</a>
+                                </div>
                             </div>
                         </li>
                     <?php endwhile; ?>

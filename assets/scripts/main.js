@@ -23,7 +23,7 @@
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
 
-          $(".about-profile-text-bottom").click(function(){
+          $(".about-read").click(function(){
             $(this).parent().find(".about-profile-text-hidden").toggle();
             $(this).toggleClass("hidden-bottom");
             if ($(this).find("p").text() === "read more") {
@@ -32,6 +32,10 @@
               $(this).find("p").text("read more");
             }
 
+          });
+
+          $(".about-contact").hover(function(){
+            $(this).parent().find(".email-hidden").toggle();
           });
 
           $(document).ready(function () {
