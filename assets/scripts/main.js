@@ -41,8 +41,8 @@
               loop: true,
               nextButton: '.next-button',
               prevButton: '.prev-button',
-              autoplay: 4000,
-              autoplayDisableOnInteraction: false,
+              // autoplay: 4000,
+              // autoplayDisableOnInteraction: false,
               effect: 'fade',
 
             });        
