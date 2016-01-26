@@ -31,8 +31,8 @@
                                     <p>Prior to joining Accomplus and ICUL, Steve was in private practice in Galesburg, primarily involved in general corporate, municipal, commercial, bankruptcy and consumer finance law. He served on the Commercial Banking and Bankruptcy Law Section Council of the Illinois State Bar Association (1996–2008) and as its chairman (2006–2007), as well as its legislative committee chair.</p>
                                     <p>He graduated with honors from St. Olaf College and received his law degree from the University of Iowa. He is licensed to practice in Illinois and Iowa, and is a member of the Illinois and Iowa State Bar Associations and the American Bankruptcy Institute. He speaks frequently to various bar and creditor groups on secured transactions, default remedies and bankruptcy matters.</p>
                                 </div>
-                                <div class="about-profile-text-bottom"><a href="#">read more</a></div>
-                                <div class="about-profile-text-bottom"><a href="#">contact</a></div>
+                                <div class="about-profile-text-bottom"><p>read more</p></div>
+                                <div class="about-profile-text-bottom"><p>contact</p></div>
                             </div>
                         </li>
                         <li>

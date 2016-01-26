@@ -75,7 +75,7 @@
     padding-bottom: 20px;
 }
 
-.about-profiles-text a {
+.about-profile-text-bottom p {
     font-family: Vollkorn,serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -90,6 +90,7 @@
     padding-right: 20px;
 }
 
-.about-profiles-text a:hover {
+.about-profile-text-bottom p:hover {
     border-bottom: none;
+    cursor: pointer;
 }

@@ -25,7 +25,12 @@
 
           $(".about-profile-text-bottom").click(function(){
             $(".about-profile-text-hidden").toggle();
-            $(".about-profile-text-bottom").addClass("hidden-bottom");
+            $(this).toggleClass("hidden-bottom");
+            if ($(this).find("p").text() === "read more") {
+            $(this).find("p").text("read less");
+            } else {
+              $(this).find("p").text("read more");
+            }
 
           });
 
@@ -48,7 +53,7 @@
             var mySwiper = new Swiper ('.small-slider', {
               // Optional parameters
               loop: true,
-              autoplay: 3000,
+              autoplay: 6000,
               autoplayDisableOnInteraction: true,
               effect: 'fade',
 
