@@ -6,7 +6,7 @@
                    <ul class="top-header-list">
                        <li class="top-header-list-item"><a href="#">login</a></li>
                        <li class="top-header-list-item"><a href="#">contact us</a></li>
-                       <li><p class="phone">888-415-6145</p></li>
+                       <li><p class="phone"><?php the_field('header_number', 728);?></p></li>
                    </ul>
                </nav>
            </div>
@@ -14,20 +14,18 @@
 
        <div class="middle-header">
            <div class="container">
-               <a href="home.html"></a>
+               <a href="<?= the_field('header_logo_link', 728);?>" style="background-image:url(<?= the_field('header_logo', 728); ?>)"></a>
            </div>
        </div>
 
        <div class="bottom-header clearfix">
            <div class="container">
-               <nav>
-                   <ul>
-                       <a href="compliance.html"><li>compliance</li></a>
-                       <a href="services.html"><li>services</li></a>
-                       <a href="#"><li>resources</li></a>
-                       <a href="about_us.html"><li>about us</li></a>
-                   </ul>
-               </nav>
+                     <?php
+            if (has_nav_menu('primary_navigation')) :
+              wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+            endif;
+            ?>
+
                <div class="header-search">
                    <input type="search" class="header-search-input" placeholder="Search">
                    <i class="fa fa-search"></i>

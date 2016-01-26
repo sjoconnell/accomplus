@@ -55,12 +55,20 @@
     background-color: #0E9548;
 }
 
-.bottom-header nav {
+.bottom-header .menu-navigation-menu-container {
     display: block;
     float: left;
     text-transform: uppercase;
     font-size: 15px;
     font-family: 'Myriad Pro',sans-serif;
+}
+
+.menu-navigation-menu-container .nav>li>a {
+    padding: 0;
+}
+
+.menu-navigation-menu-container .nav>li>a:hover {
+    background-color: #097331;
 }
 
 .bottom-header a {
