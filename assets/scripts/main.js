@@ -24,9 +24,41 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
 
           $(".about-profile-text-bottom").click(function(){
-          $(".about-profile-text-hidden").toggle();
-          $(".about-profile-text-bottom").addClass("hidden-bottom");
-        });
+            $(".about-profile-text-hidden").toggle();
+            $(this).toggleClass("hidden-bottom");
+            if ($(this).find("p").text() === "read more") {
+            $(this).find("p").text("read less");
+            } else {
+              $(this).find("p").text("read more");
+            }
+
+          });
+
+          $(document).ready(function () {
+            //initialize swiper when document ready  
+            var mySwiper = new Swiper ('.main-slider', {
+              // Optional parameters
+              loop: true,
+              nextButton: '.next-button',
+              prevButton: '.prev-button',
+              autoplay: 4000,
+              autoplayDisableOnInteraction: false,
+              effect: 'fade',
+
+            });        
+          });
+
+          $(document).ready(function () {
+            //initialize swiper when document ready  
+            var mySwiper = new Swiper ('.small-slider', {
+              // Optional parameters
+              loop: true,
+              autoplay: 6000,
+              autoplayDisableOnInteraction: true,
+              effect: 'fade',
+
+            });        
+          });
 
       }
     },
