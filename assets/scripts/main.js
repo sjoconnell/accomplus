@@ -42,7 +42,19 @@
 
             });        
           });
-          
+
+          $(document).ready(function () {
+            //initialize swiper when document ready  
+            var mySwiper = new Swiper ('.small-slider', {
+              // Optional parameters
+              loop: true,
+              autoplay: 3000,
+              autoplayDisableOnInteraction: true,
+              effect: 'fade',
+
+            });        
+          });
+
       }
     },
     // Home page
