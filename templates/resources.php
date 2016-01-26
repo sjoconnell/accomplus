@@ -3,7 +3,7 @@
 
 <?php 
 
-    wp_list_pages( $args ):
+    wp_list_pages( $args );
 
 ?>
 
