@@ -24,7 +24,7 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
 
           $(".about-profile-text-bottom").click(function(){
-            $(".about-profile-text-hidden").toggle();
+            $(this).parent().find(".about-profile-text-hidden").toggle();
             $(this).toggleClass("hidden-bottom");
             if ($(this).find("p").text() === "read more") {
             $(this).find("p").text("read less");
