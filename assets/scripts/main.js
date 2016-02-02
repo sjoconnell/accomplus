@@ -60,6 +60,9 @@
               autoplay: 6000,
               autoplayDisableOnInteraction: true,
               effect: 'fade',
+              pagination: '.swiper-pagination',
+              paginationType: 'bullets',
+              paginationClickable: true,
 
             });        
           });

@@ -2,6 +2,7 @@ footer {
     width: 100%;
     background-color: #4D4F4F;
     height: 230px;
+    position: relative;
 }
 
 .footer-image {
@@ -13,6 +14,17 @@ footer {
     position: absolute;
     display: block;
     right: 0;
+}
+
+.footer-icon {
+    background-image: url("../images/ico-location.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 16px;
+    position: absolute;
+    left: 165px;
+    top: 42px;
 }
 
 .footer-address {

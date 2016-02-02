@@ -1,5 +1,6 @@
 <footer>
     <div class="footer-image"></div>
+    <div class="footer-icon"></div>
     <div class="container">
         <div class="footer-address">
             <ul>
