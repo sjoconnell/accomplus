@@ -1,8 +1,8 @@
 <footer>
     <div class="footer-image"></div>
-    <div class="footer-icon"></div>
     <div class="container">
         <div class="footer-address">
+        <div class="footer-icon"></div>
             <ul>
                 <li><h4><?php the_field('footer_title', 728);?></h4></li>
                 <li><?php the_field('footer_street', 728);?></li>
