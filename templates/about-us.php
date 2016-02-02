@@ -2,8 +2,8 @@
 <?php while (have_posts()) : the_post(); ?>
 
         <div class="banner">
-            <div class="orange-rectangle"></div>
-            <div class="black-rhombus"></div>
+<!--             <div class="orange-rectangle"></div>
+            <div class="black-rhombus"></div> -->
             <div class="banner-rhombus"></div>
             <div class="container">
                 <div class="banner-text-about">
