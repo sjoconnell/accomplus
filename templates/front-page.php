@@ -95,7 +95,10 @@
                         </div>
                         <div class="home-bottom-split-boxes-bottom">
                             <div class="home-bottom-split-boxes-title"><h2><?php the_field('homepage_bottom_right_box_bottom_title');?></h2></div>
-                            <div class="home-bottom-split-boxes-text"><p></p></div>
+                            <div class="home-bottom-split-boxes-text">
+                                <p><a href="#">Security update</a></p>
+                                <p><a href="#">IRS Form 5498</a></p>
+                            </div>
                             <div class="home-bottom-split-boxes-link"><h5><a href="#"><?php the_field('homepage_bottom_right_box_bottom_link_text');?></a></h5></div>
                         </div>               
                     </div>
