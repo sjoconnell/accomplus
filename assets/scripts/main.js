@@ -19,6 +19,8 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $(".plugin-pages").children().addClass("animated fadeInLeft");
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

@@ -1,0 +1,22 @@
+.plugin-pages {
+    text-align: center;
+    background-color: #097331;
+    padding: 10px 0px;
+}
+
+.plugin-pages .page_item {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    background-color: #0E9548;
+    border: 1px solid white;
+    min-height: 35px;
+    vertical-align: middle;
+}
+
+.plugin-pages .page_item a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Myriad Pro',sans-serif;
+}
